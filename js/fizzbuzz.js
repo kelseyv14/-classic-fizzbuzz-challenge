@@ -5,17 +5,7 @@ var avow = require('avow');
 function FizzBuzz(n) {
     var output = '';
    
-}
-// places variables as rules for the function...still confused about i++...is it 1+1+1? 3? so maybe this means i is 1, 1 is less than or equal to n; 3?
-<<<<<<< HEAD
     for (var i = 1; i <= n; i++) {
-
-    } 
-=======
-    for (var i = 1; i <= n; i++) 
-    {} 
->>>>>>> refs/remotes/origin/master
-    // says if 1 can be divisable by three or five the output should read FizzBuzz
         if (i % 3 === 0 && i % 5 === 0) {
             output += 'FizzBuzz';
         }
@@ -30,18 +20,20 @@ function FizzBuzz(n) {
 // if it is not divisable by either, the output is a period
         else {
         output +='.'; }
+
+    } 
+    // says if 1 can be divisable by three or five the output should read FizzBuzz
+        
         
     
 
-//  the special command that tells it not to loop ?
-    return output;
-        }
-<<<<<<< HEAD
-=======
 
-// tests
-FizzBuzz(15);
->>>>>>> refs/remotes/origin/master
+    return output;
+   
+}
+
+
+
 
 
 // tests
@@ -52,3 +44,4 @@ avow('FizzBuzz 3 should be ..Fizz', '..Fizz' === FizzBuzz(3), '..Fizz', FizzBuzz
 avow('FizzBuzz 5 should be ..Fizz.Buzz', '..Fizz.Buzz' === FizzBuzz(5), '..Fizz.Buzz', FizzBuzz(5));
 avow('FizzBuzz 10 should be ..Fizz.BuzzFizz..FizzBuzz', '..Fizz.BuzzFizz..FizzBuzz' === FizzBuzz(10), '..Fizz.BuzzFizz..FizzBuzz', FizzBuzz(10));
 avow('FizzBuzz 15 should be ..Fizz.BuzzFizz..FizzBuzz.Fizz..FizzBuzz', '..Fizz.BuzzFizz..FizzBuzz.Fizz..FizzBuzz' === FizzBuzz(15), '..Fizz.BuzzFizz..FizzBuzz.Fizz..FizzBuzz', FizzBuzz(15));
+
